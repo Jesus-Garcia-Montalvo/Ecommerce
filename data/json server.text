@@ -1,0 +1,9 @@
+COMANDOS EN LA TERMINAL
+
+1.npm install -g json-server
+
+2.cd data 
+
+3.json-server --watch db.json -P 3000
+
+4.json-server --watch clientes.json  .p 5000
