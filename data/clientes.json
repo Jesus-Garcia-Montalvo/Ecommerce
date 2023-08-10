@@ -1,0 +1,12 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nane": "jesus",
+      "lastname": "garcia",
+      "email": "garcia@gmail.com",
+      "document": 1001879871,
+      "cardnumber": 4360988234
+    }
+  ]
+}

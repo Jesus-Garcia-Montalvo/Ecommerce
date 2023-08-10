@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*mantener ancho y alto de los contenedores*/
+}
+
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Paleorange: hsl(25, 100%, 94%);
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Black-modal: hsl(0, 0%, 0%, 0.25);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  width: 375px;
+  position: relative;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 20px;
+}
+.barra-nav {
+  width: 400px;
+  display: none;
+}
+
+.carro-foto {
+  width: 50px;
+}
+
+label {
+  color: black;
+}
+@media (min-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+  .header {
+    height: 110px;
+    border-bottom: 1px solid var(--Grayish-blue);
+  }
+  .header-nav {
+    width: 590;
+  }
+  .header_menu {
+    display: none;
+  }
+  .carro-foto {
+    width: 50px;
+  }
+  .barra-nav {
+    display: block;
+  }
+}
+
+.content-class {
+  height: 100px;
+  padding: 0 20px;
+}

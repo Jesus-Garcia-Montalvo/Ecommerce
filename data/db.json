@@ -1,0 +1,25 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Fall Limited Edition Sneakers",
+      "precio": "125",
+      "cantidad": "22",
+      "imagen": "images/image-product-1-thumbnail.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Men Edition Sneakers",
+      "precio": "150",
+      "cantidad": "1",
+      "imagen": "images/masc1-tn.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "women Edition Sneakers",
+      "precio": "150",
+      "cantidad": "1",
+      "imagen": "images/fem1-tn.jpg"
+    }
+  ]
+}

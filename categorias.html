@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-nav">
+        <img class="header_menu" src="images/icon-menu.svg" alt="" />
+        <a href="index.html"
+          ><img class="header_logo" src="images/logo.svg" alt=""
+        /></a>
+        <nav class="barra-nav">
+          <ul class="items-barra">
+            <li>
+              <a href="categorias.html" class="item-barra">Collections</a>
+            </li>
+            <li><a href="men.html" class="item-barra">Men</a></li>
+            <li><a href="women.html" class="item-barra">Women</a></li>
+            <li><a href="#" class="item-barra">Contact</a></li>
+            <li><a href="admin.html" class="item-barra">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--Menú responsive-->
+      <div class="responsive-barra">
+        <nav class="responsive-barra-nav">
+          <img class="responsive-close" src="images/icon-close.svg" alt="" />
+          <ul class="responsive-items-barra">
+            <li>
+              <a href="categorias.html" class="responsive-item-barra"
+                >Collections</a
+              >
+            </li>
+            <li><a href="men.html" class="responsive-item-barra">Men</a></li>
+            <li>
+              <a href="women.html" class="responsive-item-barra">Women</a>
+            </li>
+
+            <li><a href="#" class="responsive-item-barra">Contact</a></li>
+            <li>
+              <a href="admin.html" class="responsive-item-barra">Admin</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Fin Menú responsive-->
+      <div class="carro-usuario">
+        <div class="carrito">
+          <div class="carrito-noti">0</div>
+          <img class="carrito-img" src="images/icon-cart.svg" alt="" />
+        </div>
+
+        <img class="carro-foto" src="images/image-avatar.png" alt="" />
+      </div>
+    </header>
+    <main class="contenedor-principal">
+      <!--Cards-->
+      <section class="contenido">
+        <div class="card men card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/masc1.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Men Edition</h5>
+            <p class="card-text">
+              Versatile men's shoes that effortlessly combine style and
+              functionality, making them an essential addition to any
+              gentleman's footwear collection.
+            </p>
+            <a href="#" id="men-collection" class="btn info-btn"
+              >See collection</a
+            >
+          </div>
+        </div>
+
+        <div class="card women card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/fem1.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Women Edition</h5>
+            <p class="card-text">
+              Elegant and versatile women's shoes, the epitome of style and
+              comfort. These stunning low-profile sneakers are meticulously
+              crafted to be your ideal companion for casual wear.
+            </p>
+            <a href="#" id="women-collection" class="btn info-btn"
+              >See collection</a
+            >
+          </div>
+        </div>
+      </section>
+      <h1>Special Limited Edition</h1>
+      <!--Fin Cards-->
+      <section class="contenido">
+        <article class="galeria">
+          <div class="galeria-imagen">
+            <img
+              id="previusCollections"
+              class="previus"
+              src="images/icon-previous.svg"
+              alt=""
+            />
+            <img
+              id="nextCollections"
+              class="next"
+              src="images/icon-next.svg"
+              alt=""
+            />
+          </div>
+          <div class="miniaturas-galeria">
+            <img
+              id="1"
+              class="miniatura-galeria"
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="2"
+              class="miniatura-galeria"
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="3"
+              class="miniatura-galeria"
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="4"
+              class="miniatura-galeria"
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="info-producto">
+          <h2 class="info-empresa">Sneaker Company</h2>
+          <h2 class="info-titulo">Fall Limited Edition Sneakers</h2>
+          <p class="info-descripcion">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+
+          <div class="info-precio">
+            <p class="info-precio-actual">
+              $125.00 <span class="info-precio-descuento">50%</span>
+            </p>
+            <p class="info-precio-anterior">$250.00</p>
+          </div>
+          <div class="info-cantidad">
+            <div class="info-input">
+              <img class="input-minus" src="images/icon-minus.svg" alt="" />
+              <input class="input-number" type="text" value="0" />
+              <img class="input-plus" src="images/icon-plus.svg" alt="" />
+            </div>
+            <button data-id="1" class="info-btn add-cart">
+              <img src="images/icon-cart-white.svg" alt="" />Add to cart
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!--Modal del carrito-->
+      <div class="modal-carro">
+        <p class="modal-carro-titulo">Cart</p>
+        <div class="modal-carro-check">
+          <div id="productos" class="modal-carro-producto"></div>
+          <button
+            type="submit"
+            class="btn btn-primary modal-carro-borrar info-btn"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            id="che"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
+      <!--Fin Modal del carrito-->
+      <!--Galería Modal-->
+      <div class="galeria-modal-fondo">
+        <article class="galeria">
+          <div class="cerrar-modal-cont">
+            <img class="cerrar-modal" src="images/icon-close.svg" alt="" />
+          </div>
+          <div class="galeria-imagen-modal">
+            <img class="previus-modal" src="images/icon-previous.svg" alt="" />
+            <img class="next-modal" src="images/icon-next.svg" alt="" />
+          </div>
+          <div class="miniaturas-galeria-modal">
+            <img
+              id="img1-modal"
+              class="miniatura-galeria-modal"
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="img2-modal"
+              class="miniatura-galeria-modal"
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="img3-modal"
+              class="miniatura-galeria-modal"
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="img4-modal"
+              class="miniatura-galeria-modal"
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+        </article>
+      </div>
+      <!--Fin Galería Modal-->
+      <!--Modal pagar-->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="checkoutForm" id="form">
+                <div>
+                  <input
+                    class="userInfo"
+                    id="userName"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <br />
+                <div>
+                  <input
+                    class="userInfo"
+                    id="userLastName"
+                    type="text"
+                    name="lastname"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+                <br />
+                <div>
+                  <input
+                    class="userInfo"
+                    id="userEmail"
+                    type="text"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <br />
+                <div>
+                  <input
+                    class="userInfo"
+                    id="userId"
+                    type="number"
+                    name="document"
+                    placeholder="Document"
+                    required
+                  />
+                </div>
+                <br />
+                <div>
+                  <input
+                    class="userInfo"
+                    id="userCard"
+                    type="number"
+                    name="cardnumber"
+                    placeholder="Card Number"
+                    required
+                  />
+                </div>
+                <p id="warnings"></p>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-send"
+                    onclick="modal_1()"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin Modal pagar-->
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jesús, Maria José, Valentina</a>.
+      </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="js/modalcollecion.js"></script>
+    <script src="js/minuaturas.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/insert.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
