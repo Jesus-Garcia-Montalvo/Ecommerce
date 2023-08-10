@@ -478,6 +478,15 @@ label {
     padding: 90px 50px;
     gap: 125px;
   }
+
+  .insertar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #collecion {
+    margin: 10px;
+  }
+
   .info-producto {
     padding-top: 60px;
     width: 446px;
