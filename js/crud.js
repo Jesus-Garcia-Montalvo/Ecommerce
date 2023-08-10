@@ -4,6 +4,7 @@ import {
   saveProduct,
   deleteProduct,
 } from "/services/api.js";
+
 const d = document;
 const $table = d.getElementById("crud-table");
 const $title = d.querySelector(".crud-title");

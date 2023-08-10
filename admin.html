@@ -49,62 +49,75 @@
     <section class="crud">
       <article>
         <h2 class="crud-title">Crear Producto</h2>
-        <form class="crud-form" id="crud-form">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nombres</label>
+        <form
+          class="row g-3 needs-validation crud-form"
+          id="crud-form"
+          novalidate
+        >
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Nombre</label>
             <input
               type="text"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="validationCustom01"
               name="nombre"
               required
             />
+            <div class="valid-feedback">¡Se ve bien!</div>
+            <div class="invalid-feedback">Rellene este campo obligatorio.</div>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Precio</label>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Precio</label>
             <input
               type="number"
               class="form-control"
-              id="exampleInputPassword1"
+              id="validationCustom02"
               name="precio"
               required
             />
+            <div class="valid-feedback">¡Se ve bien!</div>
+            <div class="invalid-feedback">Rellene este campo obligatorio.</div>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Cantidad</label
-            >
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">cantidad</label>
             <input
               type="number"
               class="form-control"
-              id="exampleInputPassword1"
+              id="validationCustom02"
               name="cantidad"
               required
             />
+            <div class="valid-feedback">¡Se ve bien!</div>
+            <div class="invalid-feedback">Rellene este campo obligatorio.</div>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Imagen</label>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Imagen</label>
             <input
               type="text"
               class="form-control"
-              id="exampleInputPassword1"
+              id="validationCustom03"
               name="imagen"
               required
             />
+            <div class="valid-feedback">¡Se ve bien!</div>
+            <div class="invalid-feedback">Rellene este campo obligatorio.</div>
           </div>
-          <input
-            class="btn btn-primary"
-            type="submit"
-            value="Crear"
-            id="crear"
-          />
-          <input
-            class="btn btn-primary"
-            type="hidden"
-            name="id"
-            id="productid"
-          />
+          <div class="col-12"></div>
+          <br />
+          <div class="col-12">
+            <input
+              class="btn btn-primary"
+              type="submit"
+              value="Crear"
+              id="crear"
+            />
+            <input
+              class="btn btn-primary"
+              type="hidden"
+              name="id"
+              id="productid"
+            />
+          </div>
         </form>
       </article>
 
@@ -149,4 +162,5 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="services/api.js" type="module"></script>
   <script src="js/crud.js" type="module"></script>
+  <script src="js/Validation.js" type="module"></script>
 </html>
